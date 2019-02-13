@@ -1,0 +1,31 @@
+Projeto: rh
+Crie 2 pacotes: programador  / rotinas
+Crie 4 classes: 
+     Usando (programador)  - (Main)
+     Funcionario (rotinas)
+     Programador (rotinas) - filha de Funcionario
+     Analista (rotinas) - filha de Funcionario
+Métodos  (no funcionario):
+    - getSalario public double
+    - setSalario(valor) public double abstract
+    - getFuncao public String  - "ANALISTA", "PROGRAMADOR" 
+    - setFuncao(String) protected String  - chamada pelo construtor do programador e do analista
+    - getRemuneracao public double  (salario *168)
+Validações (nas classes filhas):
+    - setSalario - Programador (até 40)
+    - setSalario - Analista (40 a 60)
+Criar metodos e static de getQuant para as 3 classes    
+
+Todos com construtor:
+  setFuncao, quant++ => Programador,Analista
+  quant++ => Funcionario
+
+DecimalFormat fm= new DecimalFormat("R$ #,##0.00");
+System.out.println("analista:"+fm.format(a1.getSalario()));
+System.out.println("programador:"+fm.format(p1.getSalario()));
+
+import java.text.*;
+
+
+
+                         
